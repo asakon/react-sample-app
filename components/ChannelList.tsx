@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Menu, Icon } from 'semantic-ui-react';
+import { Link, NavLink } from 'react-router-dom';
 
 export class ChannelList extends React.Component<{}, {}> {
 
@@ -13,7 +14,10 @@ export class ChannelList extends React.Component<{}, {}> {
         Channels
           <Menu.Menu>
             {channels.map(channel =>
-              <Menu.Item key ={channel}>
+              <Menu.Item
+                key={channel}
+                as={NavLink}
+                to={{ pathname: `/channels/${channel}` }}>
               {channel}
               </Menu.Item>
             )}
