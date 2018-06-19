@@ -2,7 +2,7 @@ import * as React from 'react';
 import { render } from 'react-dom';
 import { Switch } from 'react-router';
 import { BrowserRouter, Redirect, Route } from 'react-router-dom';
-import { ChannelList } from './components';
+import { ChannelList } from './components/ChannelList';
 import { Container } from 'semantic-ui-react';
 
 const routes = <BrowserRouter>
