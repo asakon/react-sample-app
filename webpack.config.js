@@ -15,7 +15,7 @@ module.exports  = [{
   module: {
     rules: [
       {
-        text: /\.tx(x?)$/,
+        test: /\.tx(x?)$/,
         exclude: /node_modules/,
         use: ['ts-loader'],
       },
@@ -26,6 +26,6 @@ module.exports  = [{
       path.join(__dirname, 'src'),
       'node_modules'
     ],
-    extentions: ['.ts', '.tsx', '.js']
+    extensions: ['.ts', '.tsx', '.js']
   }
 }];
