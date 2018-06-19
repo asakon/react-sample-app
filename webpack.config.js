@@ -2,7 +2,7 @@ const webpack = require('webpack');
 const path = require('path');
 
 module.exports  = [{
-  cashe: true,
+  cache: true,
   devtool: 'source-map',
   devServer: {
     historyApiFallback: true,
